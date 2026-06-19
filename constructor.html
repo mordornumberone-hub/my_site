@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор ПК - CompKi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Comp<span>Ki</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="constructor.html">Конструктор</a></li>
+                        <li><a href="index.html#news">Новости</a></li>
+                        <li><a href="index.html#chat">Чат</a></li>
+                        <li><a href="index.html#reviews">Отзывы</a></li>
+                        <li><a href="index.html#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#">🔍</a>
+                    <a href="checkout.html">🛒</a>
+                    <a href="#">👤</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">СБОРКА КОМПЬЮТЕРА</h1>
+            
+            <div class="constructor-layout">
+                <!-- Левая часть - выбор компонентов -->
+                <div class="components-list">
+                    <h3>Выбор компонентов</h3>
+                    
+                    <div class="component-item">
+                        <label>Процессор:</label>
+                        <select id="processor">
+                            <option value="Intel Core i5-14600K">Intel Core i5-14600K</option>
+                            <option value="Intel Core i7-14700K">Intel Core i7-14700K</option>
+                            <option value="AMD Ryzen 7 7800X3D">AMD Ryzen 7 7800X3D</option>
+                        </select>
+                    </div>
+                    
+                    <div class="component-item">
+                        <label>Видеокарта:</label>
+                        <select id="gpu">
+                            <option value="RTX 4060">RTX 4060</option>
+                            <option value="RTX 4070">RTX 4070</option>
+                            <option value="RTX 4080">RTX 4080</option>
+                        </select>
+                    </div>
+                    
+                    <div class="component-item">
+                        <label>Материнская плата:</label>
+                        <select id="motherboard">
+                            <option value="B760">B760</option>
+                            <option value="Z790">Z790</option>
+                            <option value="B650">B650</option>
+                        </select>
+                    </div>
+                    
+                    <div class="component-item">
+                        <label>Оперативная память:</label>
+                        <select id="ram">
+                            <option value="16GB DDR5">16GB DDR5</option>
+                            <option value="32GB DDR5">32GB DDR5</option>
+                            <option value="64GB DDR5">64GB DDR5</option>
+                        </select>
+                    </div>
+                    
+                    <div class="component-item">
+                        <label>SSD/HDD:</label>
+                        <select id="storage">
+                            <option value="512GB SSD">512GB SSD</option>
+                            <option value="1TB SSD">1TB SSD</option>
+                            <option value="2TB SSD">2TB SSD</option>
+                        </select>
+                    </div>
+                    
+                    <div class="component-item">
+                        <label>Блок питания:</label>
+                        <select id="psu">
+                            <option value="650W">650W</option>
+                            <option value="750W">750W</option>
+                            <option value="850W">850W</option>
+                        </select>
+                    </div>
+                    
+                    <div class="component-item">
+                        <label>Охлаждение:</label>
+                        <select id="cooling">
+                            <option value="Воздушное">Воздушное</option>
+                            <option value="Жидкостное">Жидкостное</option>
+                            <option value="Башенное">Башенное</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Правая часть - итоговая конфигурация -->
+                <div class="result-panel">
+                    <h3>Итоговая конфигурация</h3>
+                    
+                    <ul class="selected-components" id="selected-components-list">
+                        <li>Выберите компоненты</li>
+                    </ul>
+                    
+                    <div class="total-price" id="total-price-display">0 ₽</div>
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" id="contact-me">
+                        <label for="contact-me">Связаться со мной для уточнения деталей</label>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="btn" id="add-to-cart">ДОБАВИТЬ В КОРЗИНУ</button>
+                        <button class="btn btn-secondary" id="recalculate" onclick="updateTotal()">ПЕРЕСЧИТАТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Контакты</h4>
+                    <p>📞 +7(999) 888-67-67</p>
+                    <p>✉️ compki67@gmail.com</p>
+                    <p>📍 Ул. Ленина, 24</p>
+                </div>
+                <div>
+                    <h4>Оплата и доставка</h4>
+                    <p>💳 Карты, СБП, QR-код</p>
+                    <p>🚚 Курьер, СДЭК, Почта</p>
+                </div>
+                <div>
+                    <h4>Информация</h4>
+                    <p>✅ Гарантия 12 месяцев</p>
+                    <p>🔄 Возврат товара</p>
+                    <p>📄 Политика конфиденциальности</p>
+                </div>
+                <div>
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">TG</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

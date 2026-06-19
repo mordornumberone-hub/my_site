@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompKi - Интернет-магазин компьютеров</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Comp<span>Ki</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="constructor.html">Конструктор</a></li>
+                        <li><a href="#news">Новости</a></li>
+                        <li><a href="#chat">Чат</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#">🔍</a>
+                    <a href="checkout.html">🛒</a>
+                    <a href="#">👤</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- БАННЕР -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h1>СОБЕРИ СВОЙ ИДЕАЛЬНЫЙ КОМПЬЮТЕР</h1>
+                        <p>Выбери комплектующие или возьми готовую сборку</p>
+                        <a href="constructor.html" class="btn">КОНСТРУКТОР</a>
+                    </div>
+                    <div class="banner-image">
+                        <img src="gaming-pc.jpg" alt="Игровой компьютер">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- НОВОСТИ -->
+            <h2 class="section-title" id="news">НОВОСТИ И АКЦИИ</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">
+                        <span>📅 03.06.2026</span>
+                        <span class="rating">★★★★☆ 4.2</span>
+                    </div>
+                    <h3>NVIDIA RTX 5060 уже в продаже!</h3>
+                    <p>Новые видеокарты для игр и рабочих задач. Успей заказать по стартовой цене!</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">
+                        <span>📅 28.05.2026</span>
+                        <span class="rating">★★★★★ 4.8</span>
+                    </div>
+                    <h3>Скидка 15% на все сборки ПК</h3>
+                    <p>Только до 10 июня. Промокод применяется автоматически в корзине.</p>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">
+                        <span>📅 20.05.2026</span>
+                        <span class="rating">★★★☆☆ 3.9</span>
+                    </div>
+                    <h3>Корпус DeepCool CH780 с подсветкой</h3>
+                    <p>Стильный корпус с панорамным стеклом и ARGB-подсветкой.</p>
+                </div>
+            </div>
+
+            <!-- ПОПУЛЯРНЫЕ ТОВАРЫ -->
+            <h2 class="section-title">ПОПУЛЯРНЫЕ СБОРКИ</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="pc-ultra.jpg" alt="PC Ultra">
+                    <h3>PC ULTRA</h3>
+                    <div class="specs">Intel i7, RTX 4070, 32GB DDR5, 1TB SSD</div>
+                    <div class="price">89 990 ₽</div>
+                    <a href="checkout.html" class="btn">КУПИТЬ</a>
+                </div>
+                <div class="product-card">
+                    <img src="pc-medium.jpg" alt="PC Medium">
+                    <h3>PC MEDIUM</h3>
+                    <div class="specs">Intel i5, RTX 3060, 16GB DDR4, 512GB SSD</div>
+                    <div class="price">59 990 ₽</div>
+                    <a href="checkout.html" class="btn">КУПИТЬ</a>
+                </div>
+                <div class="product-card">
+                    <img src="pc-max.jpg" alt="PC Max">
+                    <h3>PC MAX</h3>
+                    <div class="specs">Intel i9, RTX 4080, 64GB DDR5, 2TB SSD</div>
+                    <div class="price">109 990 ₽</div>
+                    <a href="checkout.html" class="btn">КУПИТЬ</a>
+                </div>
+                <div class="product-card">
+                    <img src="pc-hard.jpg" alt="PC Hard">
+                    <h3>PC HARD</h3>
+                    <div class="specs">AMD Ryzen 9, RTX 4090, 128GB DDR5, 4TB SSD</div>
+                    <div class="price">189 990 ₽</div>
+                    <a href="checkout.html" class="btn">КУПИТЬ</a>
+                </div>
+            </div>
+
+            <!-- ОТЗЫВЫ -->
+            <h2 class="section-title" id="reviews">ОТЗЫВЫ О НАС</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-author">
+                        <div class="avatar">А</div>
+                        <div><strong>Алексей</strong><br>05.02.2026</div>
+                    </div>
+                    <p>Отличный сервис! Купил готовый компьютер, все настроили, все работает!</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-author">
+                        <div class="avatar">А</div>
+                        <div><strong>Антон</strong><br>01.01.2026</div>
+                    </div>
+                    <p>Все прошло идеально, купил подарок сыну на новый год, ему нравится!</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-author">
+                        <div class="avatar">В</div>
+                        <div><strong>Владимир</strong><br>28.06.2024</div>
+                    </div>
+                    <p>Купили компьютер для сына на день рождения, помогли настроить!</p>
+                </div>
+            </div>
+
+            <!-- ЧАТ -->
+            <div class="chat-block" id="chat">
+                <h3>ЧАТ ОНЛАЙН</h3>
+                <p>Задай вопрос менеджеру</p>
+                <div class="chat-input">
+                    <input type="text" placeholder="Введите ваше сообщение...">
+                    <button class="btn">ОТПРАВИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Контакты</h4>
+                    <p>📞 +7(999) 888-67-67</p>
+                    <p>✉️ compki67@gmail.com</p>
+                    <p>📍 Ул. Ленина, 24</p>
+                </div>
+                <div>
+                    <h4>Оплата и доставка</h4>
+                    <p>💳 Карты, СБП, QR-код</p>
+                    <p>🚚 Курьер, СДЭК, Почта</p>
+                </div>
+                <div>
+                    <h4>Информация</h4>
+                    <p>✅ Гарантия 12 месяцев</p>
+                    <p>🔄 Возврат товара</p>
+                    <p>📄 Политика конфиденциальности</p>
+                </div>
+                <div>
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">TG</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

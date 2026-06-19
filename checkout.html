@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - CompKi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Comp<span>Ki</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="constructor.html">Конструктор</a></li>
+                        <li><a href="index.html#news">Новости</a></li>
+                        <li><a href="index.html#chat">Чат</a></li>
+                        <li><a href="index.html#reviews">Отзывы</a></li>
+                        <li><a href="index.html#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#">🔍</a>
+                    <a href="checkout.html">🛒</a>
+                    <a href="#">👤</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="section-title">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+            
+            <div class="constructor-layout">
+                <div>
+                    <div class="components-list">
+                        <h3>Данные доставки</h3>
+                        
+                        <div class="form-group">
+                            <label>ФИО:</label>
+                            <input type="text" id="fio" placeholder="Иванов Иван Иванович">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Почтовый адрес:</label>
+                            <input type="text" id="address" placeholder="г. Москва, ул. Примерная, д.1, кв.1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Телефон:</label>
+                            <input type="tel" id="phone" placeholder="+7 (999) 123-45-67">
+                        </div>
+                        
+                        <h3>Способ оплаты</h3>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="payment" value="card" checked> Кредитная карта
+                            </label>
+                            <label>
+                                <input type="radio" name="payment" value="check"> Чек (безналичный)
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" id="callback">
+                            <label for="callback">Продавец свяжется со мной для уточнения деталей</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-panel">
+                    <h3>Корзина</h3>
+                    <p>Количество товаров: 7</p>
+                    <ul class="selected-components">
+                        <li>Процессор: Intel Core i5-14600K</li>
+                        <li>Видеокарта: RTX 4060</li>
+                        <li>Материнская плата: B760</li>
+                        <li>ОЗУ: 32GB DDR5</li>
+                        <li>SSD: 1TB NVMe</li>
+                        <li>Блок питания: 750W</li>
+                        <li>Охлаждение: Жидкостное</li>
+                    </ul>
+                    
+                    <div class="total-price" id="total-price">130 990 ₽</div>
+                    
+                    <div class="actions">
+                        <button class="btn" id="confirm-order">ПОДТВЕРДИТЬ ЗАКАЗ</button>
+                        <button class="btn btn-danger" id="cancel-order">ОТМЕНИТЬ ЗАКАЗ</button>
+                    </div>
+                    <p style="margin-top: 15px; font-size: 14px; color: #666;">⚠️ При отмене заказа возвращается 90% суммы</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Контакты</h4>
+                    <p>📞 +7(999) 888-67-67</p>
+                    <p>✉️ compki67@gmail.com</p>
+                    <p>📍 Ул. Ленина, 24</p>
+                </div>
+                <div>
+                    <h4>Оплата и доставка</h4>
+                    <p>💳 Карты, СБП, QR-код</p>
+                    <p>🚚 Курьер, СДЭК, Почта</p>
+                </div>
+                <div>
+                    <h4>Информация</h4>
+                    <p>✅ Гарантия 12 месяцев</p>
+                    <p>🔄 Возврат товара</p>
+                    <p>📄 Политика конфиденциальности</p>
+                </div>
+                <div>
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">TG</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
